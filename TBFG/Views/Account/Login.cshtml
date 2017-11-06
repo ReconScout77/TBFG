@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Log In";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using TBFG.ViewModels
+
+@model LoginViewModel
+
+<h2>Log in</h2>
+<hr />
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(m => m.Email)
+    @Html.TextBoxFor(m => m.Email)
+
+    @Html.LabelFor(m => m.Password)
+    @Html.TextBoxFor(m => m.Password)
+
+    <input type="submit" value="Log in" class="btn btn-default" />
+}
