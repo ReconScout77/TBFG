@@ -11,11 +11,13 @@ namespace TBFG.Models
 		public int MonId { get; set; }
 		public string MonType { get; set; }
         //Level?
-        //HP
-        //Damage range
-        //Damage modifier
-        //Hit chance modifier
-        //Armor class
+        public int CurrentHealth { get; set; }
+        public int MaxHealth { get; set; }
+        public int Attacks { get; set; }
+        public int MaxDamage { get; set; }
+        public int DamageModifier { get; set; }
+        public int HitChanceModifier { get; set; }
+        public int ArmorClass { get; set; }
         //Exp given on defeat
 
 		public Monster()

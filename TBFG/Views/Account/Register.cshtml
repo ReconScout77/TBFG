@@ -15,10 +15,10 @@
     @Html.TextBoxFor(user => user.Email)
 
     @Html.LabelFor(user => user.Password)
-    @Html.TextBoxFor(user => user.Password)
+    @Html.PasswordFor(user => user.Password)
 
     @Html.LabelFor(user => user.ConfirmPassword)
-    @Html.TextBoxFor(user => user.ConfirmPassword)
+    @Html.PasswordFor(user => user.ConfirmPassword)
 
     <input type="submit" value="Register" />
 }
