@@ -6,7 +6,7 @@
 
 ## Description
 
-_A turn based fantasy game using simplified D&D mechanics._
+_A turn based fantasy game using simplified D&D inspired mechanics._
 
 ## Future functionality
 
