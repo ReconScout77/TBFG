@@ -1,4 +1,7 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace TBFG.Models
 {
     [Table("Adventurers")]
@@ -8,10 +11,21 @@ namespace TBFG.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public string HeroClass { get; set; }
-        public virtual ApplicationUser User { get; set; }
+		//Level
+        //Exp stuff
+        //HP
+		//Damage range
+		//Damage modifier
+		//Hit chance modifier
+		//Armor class
+        //Spells/Abilities
+
+		public virtual ApplicationUser User { get; set; }
 
         public Adventurer()
         {
         }
+
+        //Need logic for attacking/using spells/abilities
     }
 }
