@@ -1,5 +1,29 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    ViewData["Title"] = "Camp";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using System.Security.Claims
+
+<h2>Welcome home, @User.Identity.Name!</h2>
+<hr />
+
+@if (Model.Any())
+{
+    foreach (var adventurer in Model)
+    {
+        <div class="card">
+          <div class="card-block">
+            <h4 class="card-title">adventurer.Name</h4>
+            <h6 class="card-subtitle mb-2 text-muted">adventurer.HeroClass</h6>
+            <p class="card-text">Ready to fight for good.</p>
+            <a href="#" class="card-link">Details</a>
+            <a href="#" class="card-link">Dismiss</a>
+          </div>
+        </div>
+    }
+}
+else
+{
+    <p>There are currently no adventurers here.</p>
 }
